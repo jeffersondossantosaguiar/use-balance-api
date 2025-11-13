@@ -5,3 +5,12 @@ Content-Type: application/json
   "name": "Jefferson",
   "email": "jeffersonasdas1@example.com"
 }
+
+###
+
+PUT http://localhost:3000/users/cmhwnz6v10000pnjrm4c4jlaf/deposit
+Content-Type: application/json
+
+{
+  "amount": 500
+}
