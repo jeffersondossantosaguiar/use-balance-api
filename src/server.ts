@@ -1,10 +1,12 @@
+import * as dotenv from "dotenv"
 import Fastify from "fastify"
+import { createUserRoute } from "./infra/http/routes/create-user-route.js"
+
+dotenv.config()
 
 const app = Fastify({ logger: true })
 
-app.get("/", async () => {
-  return { message: "Server is running" }
-})
+app.register(createUserRoute)
 
 app.listen({ port: 3000 }).then(() => {
   console.log("Server listening on port 3000")
