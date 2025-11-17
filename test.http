@@ -14,3 +14,12 @@ Content-Type: application/json
 {
   "amount": 500
 }
+
+###
+
+PUT http://localhost:3000/users/cmhwnz6v10000pnjrm4c4jlaf/withdraw
+Content-Type: application/json
+
+{
+  "amount": 500
+}
